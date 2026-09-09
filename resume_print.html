@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>吴瑶珍 - 简历（纸质版 / A4）</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --line: #d8d8d8;
+      --accent: #2b4a7a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #e9e9e9;
+      color: var(--ink);
+      font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.5;
+    }
+    /* 屏幕预览时的居中纸张 */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 16px auto;
+      background: #fff;
+      padding: 14mm 15mm;
+      box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    }
+    /* ===== 页眉 ===== */
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+    }
+    .head__name { font-size: 22pt; font-weight: 700; letter-spacing: 1px; }
+    .head__role { color: var(--accent); font-size: 11pt; font-weight: 600; margin-top: 2px; }
+    .head__contact { text-align: right; font-size: 9pt; color: var(--muted); line-height: 1.7; }
+    .head__contact a { color: var(--muted); text-decoration: none; }
+
+    /* ===== 区块 ===== */
+    .sec { margin-bottom: 11px; }
+    .sec__title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+    .item { margin-bottom: 7px; }
+    .item__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .item__title { font-weight: 700; font-size: 10.5pt; }
+    .item__meta { color: var(--muted); font-size: 9pt; white-space: nowrap; }
+    .item p { margin-top: 2px; }
+    .desc { margin-top: 2px; }
+
+    /* ===== 技能网格 ===== */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px 14px;
+      font-size: 10pt;
+    }
+    .skills li { list-style: none; }
+    .skills li::before { content: "▪ "; color: var(--accent); }
+
+    .tags { margin-top: 3px; font-size: 9pt; color: var(--accent); }
+    .tags span { display: inline-block; margin-right: 8px; }
+
+    .muted { color: var(--muted); }
+
+    /* ===== 打印 ===== */
+    @media print {
+      @page { size: A4; margin: 12mm; }
+      html, body { background: #fff; font-size: 10.5pt; }
+      .page { width: auto; min-height: auto; margin: 0; padding: 0; box-shadow: none; }
+      .sec, .item { break-inside: avoid; }
+      a { color: var(--muted); }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- 页眉 -->
+    <div class="head">
+      <div>
+        <div class="head__name">吴瑶珍</div>
+        <div class="head__role">数学与应用数学 · 数据分析 / 策略运营实习生</div>
+      </div>
+      <div class="head__contact">
+        邮箱：3204037067@qq.com<br />
+        电话：19980874564<br />
+        GitHub：github.com/klgz666666<br />
+        微信：klgz66666666<br />
+        所在地：成都（base 成都 · 5 天/周）
+      </div>
+    </div>
+
+    <!-- 教育 -->
+    <div class="sec">
+      <div class="sec__title">教育背景</div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">西南石油大学 · 数学与应用数学（学士）</div>
+          <div class="item__meta">2025 — 2029（预计）</div>
+        </div>
+        <p>GPA 3.65/5.0 · 专业排名 15/80（前 19%）· CET-4 / CET-6 已通过</p>
+        <p class="muted">核心课程：数学分析、高等代数、概率论与数理统计、常微分方程、数学模型</p>
+      </div>
+    </div>
+
+    <!-- 校园经历 -->
+    <div class="sec">
+      <div class="sec__title">校园经历</div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">青年志愿者协会 · 宣传部委员（新媒体运营）</div>
+          <div class="item__meta">2025.09 — 2026.06</div>
+        </div>
+        <p>负责协会官方新媒体账号的内容策划、排版与发布，面向成员与受众进行内容触达与互动运营，保障宣传内容稳定输出与传播。</p>
+        <div class="tags"><span>内容策划</span><span>新媒体运营</span><span>用户触达</span></div>
+      </div>
+    </div>
+
+    <!-- 技能 -->
+    <div class="sec">
+      <div class="sec__title">专业技能</div>
+      <ul class="skills">
+        <li>数据分析（Python）</li>
+        <li>数学建模</li>
+        <li>SQL（业务取数基础）</li>
+        <li>英语（CET-6）</li>
+        <li>MATLAB</li>
+        <li>Git / 协作</li>
+      </ul>
+    </div>
+
+    <!-- 经历与项目 -->
+    <div class="sec">
+      <div class="sec__title">经历与项目</div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">腾讯青科实训营 · AI Coding 全栈开发助教</div>
+          <div class="item__meta">2026.08</div>
+        </div>
+        <p>担任全栈开发方向助教，参与培训交付全流程。技术上指导学生完成前端 / 后端开发、API 对接与网页部署，协助教学工具的落地与优化；日常通过学员考勤与进度数据的监控，保障培训质量并推动教学迭代。</p>
+        <div class="tags"><span>腾讯</span><span>培训交付</span><span>工具落地</span><span>数据化跟进</span></div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">多智能体应用课题组（导师：高洁老师）</div>
+          <div class="item__meta">2026.08 — 至今</div>
+        </div>
+        <p>加入高洁老师课题组，聚焦多智能体应用方向。跟进多智能体协同与控制策略研究，梳理前沿方法，并借助 MATLAB 进行仿真建模与算法验证，培养从业务问题抽象为量化模型、再用数据检验策略效果的能力。</p>
+        <div class="tags"><span>策略研究</span><span>业务分析</span><span>MATLAB 仿真</span><span>量化建模</span></div>
+      </div>
+    </div>
+
+    <p class="muted" style="font-size:8.5pt;margin-top:8px;border-top:1px solid var(--line);padding-top:5px;">
+      本人承诺以上信息真实有效。本简历为投递数据分析 / 策略运营岗位之专用版本。
+    </p>
+  </div>
+</body>
+</html>
