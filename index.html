@@ -6,6 +6,26 @@
   <!-- 替换为你的页面标题 -->
   <title data-zh="吴瑶珍 - 个人简历" data-en="Wu Yaozhen - Resume">吴瑶珍 - 个人简历</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Hero 特色项目预览 */
+    .featured{max-width:680px;margin:50px auto 0;padding:0 24px}
+    .featured__window{background:#1e293b;border-radius:14px;overflow:hidden;border:1px solid rgba(148,163,184,.2);box-shadow:0 24px 60px rgba(0,0,0,.4);transition:transform .3s}
+    .featured__window:hover{transform:translateY(-6px)}
+    .featured__bar{display:flex;align-items:center;gap:8px;padding:12px 18px;background:rgba(0,0,0,.25);border-bottom:1px solid rgba(148,163,184,.1)}
+    .featured__bar .dot{width:12px;height:12px;border-radius:50%}
+    .featured__bar .dot--red{background:#ff5f57}
+    .featured__bar .dot--yellow{background:#febc2e}
+    .featured__bar .dot--green{background:#28c840}
+    .featured__url{font-size:12px;color:#94a3b8;margin-left:14px;font-family:ui-monospace,Consolas,monospace}
+    .featured__body{padding:32px 24px 36px;text-align:center}
+    .featured__langs{font-size:34px;letter-spacing:12px;margin-bottom:18px}
+    .featured__name{font-size:clamp(32px,5vw,52px);font-weight:900;background:linear-gradient(120deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+    .featured__tag{font-size:14px;color:#94a3b8;margin-top:10px}
+    .featured__stats{font-size:13px;color:#fbbf24;font-weight:600;margin-top:16px;letter-spacing:.5px}
+    .featured__cta{display:inline-block;margin-top:20px;padding:8px 22px;border-radius:8px;background:rgba(96,165,250,.15);border:1px solid rgba(96,165,250,.4);color:#93c5fd;font-size:13px;text-decoration:none;font-weight:600;transition:.2s}
+    .featured__cta:hover{background:rgba(96,165,250,.25);border-color:#60a5fa;color:#fff}
+    @media(max-width:600px){.featured__url{display:none}.featured__langs{letter-spacing:6px}}
+  </style>
 </head>
 <body>
   <!-- ===== 顶部导航 ===== -->
@@ -37,6 +57,7 @@
       <div class="hero__cta">
         <a class="btn btn--primary" href="#contact" data-zh="联系我" data-en="Contact Me">联系我</a>
         <a class="btn btn--ghost" href="#projects" data-zh="看项目" data-en="View Projects">看项目</a>
+        <a class="btn btn--ghost" href="resume_print.html" target="_blank" data-zh="📥 下载 PDF 简历" data-en="📥 Download PDF">📥 下载 PDF 简历</a>
       </div>
       <div class="hero__socials">
         <!-- 替换为你的真实链接 -->
@@ -44,6 +65,25 @@
         <a href="#" aria-label="Email">Email</a>
         <a href="#" aria-label="WeChat">WeChat</a>
       </div>
+
+      <!-- Featured Project: CodePlay 预览 -->
+      <a class="featured" href="https://klgz666666.github.io/codeplay/" target="_blank" rel="noopener" aria-label="CodePlay 项目">
+        <div class="featured__window">
+          <div class="featured__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="featured__url">klgz666666.github.io/codeplay</span>
+          </div>
+          <div class="featured__body">
+            <div class="featured__langs">🐍 ☕ 🔧 🚀</div>
+            <div class="featured__name" data-zh="CodePlay" data-en="CodePlay">CodePlay</div>
+            <div class="featured__tag" data-zh="学·练·测 一体化编程学习平台" data-en="Learn · Practice · Test — all in one">学·练·测 一体化编程学习平台</div>
+            <div class="featured__stats" data-zh="4 门语言 · 36 章 · 108 题 · 36 挑战" data-en="4 languages · 36 chapters · 108 quizzes · 36 challenges">4 门语言 · 36 章 · 108 题 · 36 挑战</div>
+            <span class="featured__cta" data-zh="→ 在线体验" data-en="→ Try it online">→ 在线体验</span>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -174,7 +214,9 @@
       <ul class="contact-list">
         <li><span data-zh="邮箱" data-en="Email">邮箱</span><a href="mailto:3204037067@qq.com">3204037067@qq.com</a></li>
         <li><span data-zh="电话" data-en="Phone">电话</span><a href="tel:19980874564">19980874564</a></li>
-        <li><span data-zh="GitHub" data-en="GitHub">GitHub</span><a href="https://github.com/klgz666666">github.com/klgz666666</a></li>
+        <li><span data-zh="GitHub 主页" data-en="GitHub">GitHub 主页</span><a href="https://github.com/klgz666666">github.com/klgz666666</a></li>
+        <li><span data-zh="CodePlay 项目" data-en="CodePlay Project">CodePlay 项目</span><a href="https://github.com/klgz666666/codeplay">github.com/klgz666666/codeplay</a></li>
+        <li><span data-zh="简历源码" data-en="Resume Source">简历源码</span><a href="https://github.com/klgz666666/klgz666666.github.io">github.com/klgz666666/klgz666666.github.io</a></li>
         <li><span data-zh="微信" data-en="WeChat">微信</span><span>klgz66666666</span></li>
         <li><span data-zh="所在地" data-en="Location">所在地</span><span data-zh="中国 · 成都" data-en="Chengdu, China">中国 · 成都</span></li>
       </ul>
