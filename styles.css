@@ -182,6 +182,25 @@ a { color: inherit; text-decoration: none; }
 }
 .contact-list a { color: var(--c1); border-bottom: 1px dashed var(--c1); }
 
+/* 项目卡片外链：在线预览为主按钮，源码为次按钮 */
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.project-links a {
+  font-size: 0.82rem; font-weight: 800; text-decoration: none;
+  padding: 6px 14px; border-radius: 999px; transition: transform .18s ease, box-shadow .18s ease;
+}
+.project-links a.live {
+  color: #fff; background: linear-gradient(135deg, var(--c1), var(--c2));
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.28);
+}
+.project-links a.repo {
+  color: var(--c1); background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+.project-links a:hover { transform: translateY(-2px); }
+@media print {
+  .project-links a.live { background: none; color: var(--c1); box-shadow: none; border: 1px solid var(--c1); }
+}
+
 /* ===== 页脚 ===== */
 .footer { text-align: center; padding: 30px 22px; color: var(--muted); font-size: 0.88rem; }
 
