@@ -20,12 +20,14 @@ else
 fi
 
 # 2) 检查是否有本地提交还没推上去（关键：已 commit 未 push 的情况也要能推）
-AHEAD=$(git rev-list --count "origin/main..HEAD" 2>/dev/null || echo "unknown")
-if [ "$AHEAD" = "0" ]; then
+#    本仓库没有 origin/main 远程跟踪引用（历史 push 用完整 URL 完成），所以直接问远程
+REMOTE_SHA=$(git ls-remote origin refs/heads/main 2>/dev/null | awk '{print $1}')
+LOCAL_SHA=$(git rev-parse HEAD)
+if [ -n "$REMOTE_SHA" ] && [ "$REMOTE_SHA" = "$LOCAL_SHA" ]; then
   echo "本地与远程一致，无需 push。"
   exit 0
 fi
-echo "有 ${AHEAD} 个本地提交待推送。"
+echo "本地有提交待推送（本地 ${LOCAL_SHA:0:7} → 远程 ${REMOTE_SHA:0:7}）。"
 
 # 3) 收 token 并推送（token 只在这里手输，不会落盘）
 read -s -p "请粘贴 GitHub Token（上次用过的也行）: " TOKEN
