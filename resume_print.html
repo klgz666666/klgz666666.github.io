@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>吴瑶珍 - 简历（纸质版 / A4）</title>
+  <title>吴瑶珍 - 简历（数据分析方向 / A4）</title>
   <style>
     :root {
       --ink: #1a1a1a;
@@ -94,14 +94,14 @@
     <div class="head">
       <div>
         <div class="head__name">吴瑶珍</div>
-        <div class="head__role">数学与应用数学 · 数据分析 / 策略运营实习生</div>
+        <div class="head__role">数学与应用数学 · 数据分析方向</div>
       </div>
       <div class="head__contact">
         邮箱：3204037067@qq.com<br />
         电话：19980874564<br />
+        作品集：klgz666666.github.io<br />
         GitHub：github.com/klgz666666<br />
-        微信：klgz66666666<br />
-        所在地：成都（base 成都 · 5 天/周）
+        所在地：成都（可连续实习 4 个月，远程优先）
       </div>
     </div>
 
@@ -113,21 +113,55 @@
           <div class="item__title">西南石油大学 · 数学与应用数学（学士）</div>
           <div class="item__meta">2025 — 2029（预计）</div>
         </div>
-        <p>GPA 3.65/5.0 · 专业排名 15/80（前 19%）· CET-4 / CET-6 已通过</p>
-        <p class="muted">核心课程：数学分析、高等代数、概率论与数理统计、常微分方程、数学模型</p>
+        <p>GPA 3.42/4.0 · 专业排名 10/80（前 12.5%）· CET-4 已通过 · CET-6 450 分</p>
+        <p class="muted">核心课程：数学分析、高等代数、概率论与数理统计、常微分方程</p>
       </div>
     </div>
 
-    <!-- 校园经历 -->
+    <!-- 实习与工作经历 -->
     <div class="sec">
-      <div class="sec__title">校园经历</div>
+      <div class="sec__title">实习与工作经历</div>
       <div class="item">
         <div class="item__top">
-          <div class="item__title">青年志愿者协会 · 宣传部委员（新媒体运营）</div>
-          <div class="item__meta">2025.09 — 2026.06</div>
+          <div class="item__title">腾讯青科实训营 · 全栈开发方向助教</div>
+          <div class="item__meta">2026.08（成都 · 一周）</div>
         </div>
-        <p>负责协会官方新媒体账号的内容策划、排版与发布，面向成员与受众进行内容触达与互动运营，保障宣传内容稳定输出与传播。</p>
-        <div class="tags"><span>内容策划</span><span>新媒体运营</span><span>用户触达</span></div>
+        <p>带教 20 名学员，覆盖前端 / 后端开发、API 对接与网页部署全流程，所带学员产出 4 个结业项目并全部通过导师评审路演；同时负责签到签退、课堂纪律与全班安全。获评「优秀助教」。</p>
+        <div class="tags"><span>腾讯</span><span>优秀助教</span><span>教学交付</span><span>问题排查</span></div>
+      </div>
+    </div>
+
+    <!-- 项目经历 -->
+    <div class="sec">
+      <div class="sec__title">项目经历</div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">成绩预测与学业风险预警系统（个人独立项目）</div>
+          <div class="item__meta">2026.09 · 已开源</div>
+        </div>
+        <p>基于 UCI Student Performance 数据集（1044 条 / 33 字段），独立完成数据清洗、特征工程、建模评估到 PyQt5 桌面端交付的完整链路。设计双任务线：用平时成绩与行为特征回归预测期末成绩，随机森林 MAE 0.90 / R² 0.83，较线性回归基线降低 11.5%；在完全不用历史成绩的前提下做早期预警，通过阈值调优把召回率从 0.24 提升到 0.87。对比 BP 神经网络结果并分析其不占优的原因，据此完成模型选型。</p>
+        <div class="tags"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>特征工程</span><span>阈值调优</span></div>
+      </div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">CodePlay 编程学习乐园（个人独立项目）</div>
+          <div class="item__meta">2026.06 — 至今 · 已上线</div>
+        </div>
+        <p>独立设计并实现面向初学者的「学 + 练 + 测」一体化 Web 平台，覆盖 Python / Java / C / C++ 四门语言、36 个章节、108 道练习题与 36 个编程挑战。Python 代码经 WebAssembly 在浏览器内真实运行，C / C++ / Java 调用在线编译服务按用例自动判题；设计断网降级方案与闯关解锁、积分徽章机制。</p>
+        <div class="tags"><span>Web 全栈</span><span>Pyodide</span><span>Judge0</span><span>开源</span></div>
+      </div>
+    </div>
+
+    <!-- 科研经历 -->
+    <div class="sec">
+      <div class="sec__title">科研经历</div>
+      <div class="item">
+        <div class="item__top">
+          <div class="item__title">多智能体应用课题组（导师：高杰）</div>
+          <div class="item__meta">2026.08 — 至今</div>
+        </div>
+        <p>系统阅读中英文文献 8 篇，梳理预定时间控制、事件触发控制与奇异多智能体系统的研究现状与方法脉络，整理文献笔记与复现思路。</p>
+        <div class="tags"><span>多智能体</span><span>文献调研</span><span>控制理论</span></div>
       </div>
     </div>
 
@@ -135,38 +169,30 @@
     <div class="sec">
       <div class="sec__title">专业技能</div>
       <ul class="skills">
-        <li>数据分析（Python）</li>
-        <li>数学建模</li>
-        <li>SQL（业务取数基础）</li>
-        <li>英语（CET-6）</li>
-        <li>MATLAB</li>
-        <li>Git / 协作</li>
+        <li>Python（Pandas / NumPy）</li>
+        <li>scikit-learn 建模</li>
+        <li>数据可视化（Matplotlib）</li>
+        <li>Excel / WPS 表格</li>
+        <li>SQL（基础查询 · 学习中）</li>
+        <li>英语（CET-6 450）</li>
       </ul>
     </div>
 
-    <!-- 经历与项目 -->
+    <!-- 校园经历 -->
     <div class="sec">
-      <div class="sec__title">经历与项目</div>
+      <div class="sec__title">校园经历</div>
       <div class="item">
         <div class="item__top">
-          <div class="item__title">腾讯青科实训营 · AI Coding 全栈开发助教</div>
-          <div class="item__meta">2026.08</div>
+          <div class="item__title">青年志愿者协会 · 宣传部委员</div>
+          <div class="item__meta">2025.09 — 2026.06</div>
         </div>
-        <p>担任全栈开发方向助教，参与培训交付全流程。技术上指导学生完成前端 / 后端开发、API 对接与网页部署，协助教学工具的落地与优化；日常通过学员考勤与进度数据的监控，保障培训质量并推动教学迭代。</p>
-        <div class="tags"><span>腾讯</span><span>培训交付</span><span>工具落地</span><span>数据化跟进</span></div>
-      </div>
-      <div class="item">
-        <div class="item__top">
-          <div class="item__title">多智能体应用课题组（导师：高洁老师）</div>
-          <div class="item__meta">2026.08 — 至今</div>
-        </div>
-        <p>加入高洁老师课题组，聚焦多智能体应用方向。跟进多智能体协同与控制策略研究，梳理前沿方法，并借助 MATLAB 进行仿真建模与算法验证，培养从业务问题抽象为量化模型、再用数据检验策略效果的能力。</p>
-        <div class="tags"><span>策略研究</span><span>业务分析</span><span>MATLAB 仿真</span><span>量化建模</span></div>
+        <p>负责协会活动文稿撰写、推文排版与官方工作号发布，保障宣传内容稳定输出。</p>
+        <div class="tags"><span>文稿撰写</span><span>推文排版</span><span>新媒体运营</span></div>
       </div>
     </div>
 
     <p class="muted" style="font-size:8.5pt;margin-top:8px;border-top:1px solid var(--line);padding-top:5px;">
-      本人承诺以上信息真实有效。本简历为投递数据分析 / 策略运营岗位之专用版本。
+      本人承诺以上信息真实有效。本简历为投递数据分析相关岗位之专用版本。
     </p>
   </div>
 </body>
