@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- 替换为你的页面标题 -->
-  <title data-zh="吴瑶珍 - 个人简历" data-en="Wu Yaozhen - Resume">吴瑶珍 - 个人简历</title>
+  <title data-zh="吴瑶珍 · 数据分析 | 个人主页" data-en="Wu Yaozhen · Data Analytics">吴瑶珍 · 数据分析 | 个人主页</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     /* Hero 特色项目预览 */
@@ -19,12 +18,16 @@
     .featured__url{font-size:12px;color:#94a3b8;margin-left:14px;font-family:ui-monospace,Consolas,monospace}
     .featured__body{padding:32px 24px 36px;text-align:center}
     .featured__langs{font-size:34px;letter-spacing:12px;margin-bottom:18px}
-    .featured__name{font-size:clamp(32px,5vw,52px);font-weight:900;background:linear-gradient(120deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.1}
+    .featured__name{font-size:clamp(28px,4.4vw,44px);font-weight:900;background:linear-gradient(120deg,#60a5fa,#a78bfa,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.15}
     .featured__tag{font-size:14px;color:#94a3b8;margin-top:10px}
     .featured__stats{font-size:13px;color:#fbbf24;font-weight:600;margin-top:16px;letter-spacing:.5px}
     .featured__cta{display:inline-block;margin-top:20px;padding:8px 22px;border-radius:8px;background:rgba(96,165,250,.15);border:1px solid rgba(96,165,250,.4);color:#93c5fd;font-size:13px;text-decoration:none;font-weight:600;transition:.2s}
     .featured__cta:hover{background:rgba(96,165,250,.25);border-color:#60a5fa;color:#fff}
-    @media(max-width:600px){.featured__url{display:none}.featured__langs{letter-spacing:6px}}
+    .featured__metrics{display:flex;justify-content:center;gap:34px;margin-top:22px}
+    .featured__metrics>div{display:flex;flex-direction:column;gap:5px;align-items:center}
+    .featured__metrics b{font-size:23px;font-weight:800;background:linear-gradient(120deg,#60a5fa,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1.2}
+    .featured__metrics span{font-size:11px;color:#94a3b8;letter-spacing:.5px;white-space:nowrap}
+    @media(max-width:600px){.featured__url{display:none}.featured__langs{letter-spacing:6px}.featured__metrics{gap:18px}.featured__metrics b{font-size:18px}.featured__metrics span{font-size:10px}}
   </style>
 </head>
 <body>
@@ -49,38 +52,39 @@
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__inner">
       <div class="hero__avatar" aria-hidden="true">👤</div>
-      <!-- 替换为你的姓名 -->
       <h1 class="hero__name" data-zh="吴瑶珍" data-en="Wu Yaozhen">吴瑶珍</h1>
-      <!-- 替换为一句话定位 -->
-      <p class="hero__role" data-zh="数学与应用数学" data-en="Mathematics">数学与应用数学</p>
-      <p class="hero__tagline" data-zh="用严谨的数学思维解决真实问题。" data-en="Solving real problems with rigorous mathematical thinking.">用严谨的数学思维解决真实问题。</p>
+      <p class="hero__role" data-zh="数学与应用数学 · 数据分析方向" data-en="Mathematics · Data Analytics">数学与应用数学 · 数据分析方向</p>
+      <p class="hero__tagline" data-zh="把数据变成能落地的判断。" data-en="Turning data into decisions that hold up.">把数据变成能落地的判断。</p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="#contact" data-zh="联系我" data-en="Contact Me">联系我</a>
         <a class="btn btn--ghost" href="#projects" data-zh="看项目" data-en="View Projects">看项目</a>
         <a class="btn btn--ghost" href="resume_print.html" target="_blank" data-zh="📥 下载 PDF 简历" data-en="📥 Download PDF">📥 下载 PDF 简历</a>
       </div>
       <div class="hero__socials">
-        <!-- 替换为你的真实链接 -->
-        <a href="https://github.com/klgz666666" aria-label="GitHub">GitHub</a>
-        <a href="#" aria-label="Email">Email</a>
-        <a href="#" aria-label="WeChat">WeChat</a>
+        <a href="https://github.com/klgz666666" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:3204037067@qq.com" aria-label="Email">Email</a>
+        <a href="#contact" aria-label="WeChat">WeChat</a>
       </div>
 
-      <!-- Featured Project: CodePlay 预览 -->
-      <a class="featured" href="https://klgz666666.github.io/codeplay/" target="_blank" rel="noopener" aria-label="CodePlay 项目">
+      <!-- Featured Project: 成绩预测与学业风险预警 -->
+      <a class="featured" href="https://github.com/klgz666666/grade-predictor" target="_blank" rel="noopener" aria-label="成绩预测与学业风险预警系统">
         <div class="featured__window">
           <div class="featured__bar">
             <span class="dot dot--red"></span>
             <span class="dot dot--yellow"></span>
             <span class="dot dot--green"></span>
-            <span class="featured__url">klgz666666.github.io/codeplay</span>
+            <span class="featured__url">grade-predictor · UCI Student Performance</span>
           </div>
           <div class="featured__body">
-            <div class="featured__langs">🐍 ☕ 🔧 🚀</div>
-            <div class="featured__name" data-zh="CodePlay" data-en="CodePlay">CodePlay</div>
-            <div class="featured__tag" data-zh="学·练·测 一体化编程学习平台" data-en="Learn · Practice · Test — all in one">学·练·测 一体化编程学习平台</div>
-            <div class="featured__stats" data-zh="4 门语言 · 36 章 · 108 题 · 36 挑战" data-en="4 languages · 36 chapters · 108 quizzes · 36 challenges">4 门语言 · 36 章 · 108 题 · 36 挑战</div>
-            <span class="featured__cta" data-zh="→ 在线体验" data-en="→ Try it online">→ 在线体验</span>
+            <div class="featured__langs">📊 📈 🎯</div>
+            <div class="featured__name" data-zh="成绩预测与风险预警" data-en="Grade Prediction &amp; Risk Warning">成绩预测与风险预警</div>
+            <div class="featured__tag" data-zh="双任务线：期末成绩回归 + 早期学业风险预警分类" data-en="Two tracks: grade regression + early risk-warning classification">双任务线：期末成绩回归 + 早期学业风险预警分类</div>
+            <div class="featured__metrics">
+              <div><b>-11.5%</b><span data-zh="MAE 较基线" data-en="MAE vs baseline">MAE 较基线</span></div>
+              <div><b>0.87</b><span data-zh="预警召回率" data-en="Warning recall">预警召回率</span></div>
+              <div><b>1044</b><span data-zh="样本量" data-en="Samples">样本量</span></div>
+            </div>
+            <span class="featured__cta" data-zh="→ 查看源码" data-en="→ View source">→ 查看源码</span>
           </div>
         </div>
       </a>
@@ -94,8 +98,7 @@
       <h2 data-zh="你好，我是吴瑶珍" data-en="Hi, I'm Wu Yaozhen">你好，我是吴瑶珍</h2>
     </div>
     <div class="card reveal">
-      <!-- 替换为你的自我介绍 -->
-      <p data-zh="我是西南石油大学数学与应用数学专业本科生，GPA 3.65/5.0，专业排名前 19%，已通过 CET-4 / CET-6。我对数据与算法抱有持续兴趣，正在自学强化学习的数学原理与 SQL。2026 年 8 月，我担任腾讯青科实训营 AI Coding 全栈开发方向助教，协助学员完成项目并组织代码评审；在校期间任青年志愿者协会宣传部委员，负责文稿撰写与新媒体运营。我希望借助实习，把扎实的数学功底转化为可落地的工程能力。" data-en="I'm an undergraduate in Mathematics at Southwest Petroleum University (GPA 3.65/5.0, top 19%, CET-4/6). I'm interested in data and algorithms, and currently self-studying the mathematical foundations of reinforcement learning and SQL. In Aug 2026 I served as a TA for the AI Coding full-stack track at Tencent's Youth Science Training Camp, helping trainees ship projects and running code reviews. On campus I was a PR committee member of the Youth Volunteers Association, handling copywriting and social media. I'm looking for an internship to turn solid math training into real engineering impact.">我是西南石油大学数学与应用数学专业本科生，GPA 3.65/5.0，专业排名前 19%，已通过 CET-4 / CET-6。我对数据与算法抱有持续兴趣，正在自学强化学习的数学原理与 SQL。2026 年 8 月，我担任腾讯青科实训营 AI Coding 全栈开发方向助教，协助学员完成项目并组织代码评审；在校期间任青年志愿者协会宣传部委员，负责文稿撰写与新媒体运营。我希望借助实习，把扎实的数学功底转化为可落地的工程能力。</p>
+      <p data-zh="我是西南石油大学数学与应用数学专业本科生，专业排名 10/80（前 12.5%），GPA 3.42/4.0，CET-6 450 分。数学训练给了我扎实的统计与建模基础——我能独立完成从数据清洗、特征工程到模型评估与结论输出的完整链路，目前正在系统补齐 SQL 与数据可视化，让分析结论真正可落地。2026 年 8 月，我担任腾讯青科实训营全栈开发方向助教，带 20 名学员在一周内产出 4 个结业项目并获评「优秀助教」，这让我确信自己能把复杂的东西讲清楚。独立开发的 CodePlay 编程学习平台已开源上线，覆盖 4 门语言、108 道练习。我期待用实习把数学功底转化为真实的数据判断力。" data-en="I'm an undergraduate in Mathematics at Southwest Petroleum University — ranked 10/80 (top 12.5%), GPA 3.42/4.0, CET-6 450. My math training gave me a solid statistical and modeling foundation: I can independently own the full loop from data cleaning and feature engineering to model evaluation and written conclusions, and I'm now systematically building up SQL and data visualization so findings actually land. In Aug 2026 I served as a TA for the full-stack track at Tencent's Youth Science Camp, guiding 20 trainees to 4 shipped capstone projects in one week and earning an Outstanding TA award — which convinced me I can make complex things clear. My solo-built CodePlay learning platform is open-sourced and live, covering 4 languages and 108 exercises. I'm looking for an internship to turn solid math into real analytical judgment.">我是西南石油大学数学与应用数学专业本科生，专业排名 10/80（前 12.5%），GPA 3.42/4.0，CET-6 450 分。数学训练给了我扎实的统计与建模基础——我能独立完成从数据清洗、特征工程到模型评估与结论输出的完整链路，目前正在系统补齐 SQL 与数据可视化，让分析结论真正可落地。2026 年 8 月，我担任腾讯青科实训营全栈开发方向助教，带 20 名学员在一周内产出 4 个结业项目并获评「优秀助教」，这让我确信自己能把复杂的东西讲清楚。独立开发的 CodePlay 编程学习平台已开源上线，覆盖 4 门语言、108 道练习。我期待用实习把数学功底转化为真实的数据判断力。</p>
     </div>
   </section>
 
@@ -109,12 +112,10 @@
       <div class="timeline__item reveal">
         <div class="timeline__dot" aria-hidden="true"></div>
         <div class="card">
-          <!-- 替换为你的学校/专业/时间 -->
           <h3 data-zh="西南石油大学 · 数学与应用数学（学士）" data-en="Southwest Petroleum University · B.Sc. in Mathematics">西南石油大学 · 数学与应用数学（学士）</h3>
           <p class="muted" data-zh="2025 — 2029（预计）" data-en="2025 — 2029 (expected)">2025 — 2029（预计）</p>
-          <!-- 替换为你的成绩/排名 -->
-          <p data-zh="GPA 3.65/5.0 · 专业排名 15/80（前 19%）· CET-4 / CET-6 已通过" data-en="GPA 3.65/5.0 · Rank 15/80 (top 19%) · CET-4 / CET-6 passed">GPA 3.65/5.0 · 专业排名 15/80（前 19%）· CET-4 / CET-6 已通过</p>
-          <p class="muted" data-zh="核心课程：数学分析、高等代数、概率论与数理统计、常微分方程" data-en="Core courses: Mathematical Analysis, Advanced Algebra, Probability & Statistics, ODE">核心课程：数学分析、高等代数、概率论与数理统计、常微分方程</p>
+          <p data-zh="GPA 3.42/4.0 · 专业排名 10/80（前 12.5%）· CET-4 已通过 · CET-6 450 分" data-en="GPA 3.42/4.0 · Rank 10/80 (top 12.5%) · CET-4 passed · CET-6 450">GPA 3.42/4.0 · 专业排名 10/80（前 12.5%）· CET-4 已通过 · CET-6 450 分</p>
+          <p class="muted" data-zh="核心课程：数学分析、高等代数、概率论与数理统计、常微分方程" data-en="Core courses: Mathematical Analysis, Advanced Algebra, Probability &amp; Statistics, ODE">核心课程：数学分析、高等代数、概率论与数理统计、常微分方程</p>
         </div>
       </div>
     </div>
@@ -124,7 +125,7 @@
   <section class="section" id="campus">
     <div class="section__head reveal">
       <span class="section__kicker" data-zh="校园经历" data-en="Campus Experience">校园经历</span>
-      <h2 data-zh="课外与组织" data-en="Extracurricular & Org">课外与组织</h2>
+      <h2 data-zh="课外与组织" data-en="Extracurricular &amp; Org">课外与组织</h2>
     </div>
     <div class="timeline">
       <div class="timeline__item reveal">
@@ -146,30 +147,30 @@
       <h2 data-zh="我能做什么" data-en="What I Can Do">我能做什么</h2>
     </div>
     <div class="skills-grid">
-      <!-- 每个技能：data-level 为进度百分比（0-100），替换文字与数值即可 -->
+      <!-- 每个技能：data-level 为进度百分比（0-100） -->
       <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="Python" data-en="Python">Python</span><span class="skill__pct">80%</span></div>
+        <div class="skill__top"><span data-zh="Python（Pandas / NumPy）" data-en="Python (Pandas / NumPy)">Python（Pandas / NumPy）</span><span class="skill__pct">80%</span></div>
         <div class="bar"><div class="bar__fill" data-level="80"></div></div>
       </div>
       <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="数学建模" data-en="Math Modeling">数学建模</span><span class="skill__pct">75%</span></div>
+        <div class="skill__top"><span data-zh="统计与建模（scikit-learn）" data-en="Statistics &amp; Modeling (scikit-learn)">统计与建模（scikit-learn）</span><span class="skill__pct">75%</span></div>
         <div class="bar"><div class="bar__fill" data-level="75"></div></div>
       </div>
       <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="英语（CET-6）" data-en="English (CET-6)">英语（CET-6）</span><span class="skill__pct">75%</span></div>
+        <div class="skill__top"><span data-zh="数据可视化（Matplotlib）" data-en="Data Visualization (Matplotlib)">数据可视化（Matplotlib）</span><span class="skill__pct">70%</span></div>
+        <div class="bar"><div class="bar__fill" data-level="70"></div></div>
+      </div>
+      <div class="card skill reveal">
+        <div class="skill__top"><span data-zh="Excel / WPS 表格" data-en="Excel / WPS">Excel / WPS 表格</span><span class="skill__pct">75%</span></div>
         <div class="bar"><div class="bar__fill" data-level="75"></div></div>
       </div>
       <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="Git / 协作" data-en="Git / Collaboration">Git / 协作</span><span class="skill__pct">65%</span></div>
-        <div class="bar"><div class="bar__fill" data-level="65"></div></div>
-      </div>
-      <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="强化学习的数学原理" data-en="Math of Reinforcement Learning">强化学习的数学原理</span><span class="skill__pct">55%</span></div>
-        <div class="bar"><div class="bar__fill" data-level="55"></div></div>
-      </div>
-      <div class="card skill reveal">
-        <div class="skill__top"><span data-zh="SQL" data-en="SQL">SQL</span><span class="skill__pct">60%</span></div>
+        <div class="skill__top"><span data-zh="SQL（正在系统学习）" data-en="SQL (in progress)">SQL（正在系统学习）</span><span class="skill__pct">60%</span></div>
         <div class="bar"><div class="bar__fill" data-level="60"></div></div>
+      </div>
+      <div class="card skill reveal">
+        <div class="skill__top"><span data-zh="AI 工具链（WorkBuddy）" data-en="AI Tooling (WorkBuddy)">AI 工具链（WorkBuddy）</span><span class="skill__pct">80%</span></div>
+        <div class="bar"><div class="bar__fill" data-level="80"></div></div>
       </div>
     </div>
   </section>
@@ -181,27 +182,36 @@
       <h2 data-zh="做过的事" data-en="What I've Done">做过的事</h2>
     </div>
     <div class="projects-grid">
-      <!-- CodePlay · 个人独立项目（2026.09 最新） -->
+      <!-- 成绩预测与学业风险预警 · 数据分析核心项目 -->
+      <article class="card project reveal">
+        <h3 data-zh="成绩预测与学业风险预警系统（个人独立项目）" data-en="Grade Prediction &amp; Early Risk Warning (Solo Project)">成绩预测与学业风险预警系统（个人独立项目）</h3>
+        <p data-zh="基于 UCI Student Performance 公开数据集（1044 条 / 33 字段），独立完成数据清洗、特征工程、建模评估到桌面端交付的完整链路。设计双任务线：① 用平时成绩与行为特征回归预测期末成绩，随机森林 MAE 0.90 / R² 0.83，较线性回归基线降低 11.5%；② 在完全不用历史成绩的前提下做早期预警，通过阈值调优把召回率从 0.24 提升到 0.87——10 个真有风险的学生能识别出近 9 个，契合「宁可误报也要多抓」的预警场景。同时对比 BP 神经网络表现，分析其在该数据集上不占优的原因并据此选型。产出含 PyQt5 桌面端、完整评估图表与可复现脚本。" data-en="End-to-end solo build on the public UCI Student Performance dataset (1,044 records / 33 features) — data cleaning, feature engineering, modeling, evaluation, and a desktop deliverable. Two task tracks: (1) regressing final grades from coursework scores and behavioral features — Random Forest MAE 0.90 / R² 0.83, an 11.5% reduction over the linear baseline; (2) early warning using no historical scores at all, where threshold tuning lifted recall from 0.24 to 0.87 — catching nearly 9 of every 10 truly at-risk students, matching the &quot;better to over-flag than miss&quot; logic of early-warning scenarios. Also benchmarked an MLP neural net, analyzed why it underperforms on this dataset, and documented the model choice. Ships with a PyQt5 desktop app, full evaluation plots, and reproducible scripts.">基于 UCI Student Performance 公开数据集（1044 条 / 33 字段），独立完成数据清洗、特征工程、建模评估到桌面端交付的完整链路。设计双任务线：① 用平时成绩与行为特征回归预测期末成绩，随机森林 MAE 0.90 / R² 0.83，较线性回归基线降低 11.5%；② 在完全不用历史成绩的前提下做早期预警，通过阈值调优把召回率从 0.24 提升到 0.87——10 个真有风险的学生能识别出近 9 个，契合「宁可误报也要多抓」的预警场景。同时对比 BP 神经网络表现，分析其在该数据集上不占优的原因并据此选型。产出含 PyQt5 桌面端、完整评估图表与可复现脚本。</p>
+        <div class="tags"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>PyQt5</span><span>特征工程</span><span>阈值调优</span></div>
+        <div class="project-links">
+          <a class="repo" href="https://github.com/klgz666666/grade-predictor" target="_blank" rel="noopener" data-zh="源码" data-en="Source">源码</a>
+        </div>
+      </article>
+      <!-- CodePlay · 个人独立项目 -->
       <article class="card project reveal">
         <h3 data-zh="CodePlay · 编程学习乐园（个人独立项目）" data-en="CodePlay · Programming Learning Playground (Solo Project)">CodePlay · 编程学习乐园（个人独立项目）</h3>
-        <p data-zh="独立设计并实现面向编程初学者的"学+练+测"一体化 Web 平台，覆盖 Python / Java / C / C++ 四门语言、36 个章节、108 道练习题与 36 个编程挑战。前端纯静态实现：Python 代码在浏览器内通过 WebAssembly 真实运行；C / C++ / Java 调用在线编译服务编译执行，并按多组用例自动判题。闯关解锁 + 积分 + 徽章机制驱动持续学习，断网时自动降级为"对照答案自查"。项目已开源并部署到 GitHub Pages。" data-en="Solo-designed and shipped an end-to-end "learn + practice + test" web platform for programming beginners. Covers Python / Java / C / C++ with 36 chapters, 108 quizzes, and 36 coding challenges. Built as a static frontend: Python runs locally via WebAssembly; C/C++/Java compile via an online judge and auto-grade against test cases. Gamified with level-locked chapters, XP, and badges, with an automatic fallback to self-check mode when offline. Open-sourced and deployed on GitHub Pages.">独立设计并实现面向编程初学者的"学+练+测"一体化 Web 平台，覆盖 Python / Java / C / C++ 四门语言、36 个章节、108 道练习题与 36 个编程挑战。前端纯静态实现：Python 代码在浏览器内通过 WebAssembly 真实运行；C / C++ / Java 调用在线编译服务编译执行，并按多组用例自动判题。闯关解锁 + 积分 + 徽章机制驱动持续学习，断网时自动降级为"对照答案自查"。项目已开源并部署到 GitHub Pages。</p>
+        <p data-zh="独立设计并实现面向编程初学者的「学 + 练 + 测」一体化 Web 平台，覆盖 Python / Java / C / C++ 四门语言、36 个章节、108 道练习题与 36 个编程挑战。前端纯静态实现：Python 代码在浏览器内通过 WebAssembly 真实运行；C / C++ / Java 调用在线编译服务编译执行，并按多组用例自动判题。闯关解锁 + 积分 + 徽章机制驱动持续学习，断网时自动降级为「对照答案自查」。" data-en="Solo-designed and shipped an end-to-end learn + practice + test web platform for programming beginners. Covers Python / Java / C / C++ with 36 chapters, 108 quizzes, and 36 coding challenges. Built as a static frontend: Python runs locally via WebAssembly; C/C++/Java compile via an online judge and auto-grade against test cases. Gamified with level-locked chapters, XP, and badges, with an automatic fallback to self-check mode when offline.">独立设计并实现面向编程初学者的「学 + 练 + 测」一体化 Web 平台，覆盖 Python / Java / C / C++ 四门语言、36 个章节、108 道练习题与 36 个编程挑战。前端纯静态实现：Python 代码在浏览器内通过 WebAssembly 真实运行；C / C++ / Java 调用在线编译服务编译执行，并按多组用例自动判题。闯关解锁 + 积分 + 徽章机制驱动持续学习，断网时自动降级为「对照答案自查」。</p>
         <div class="tags"><span>Python</span><span>Java</span><span>C / C++</span><span>Web 全栈</span><span>Pyodide</span><span>开源</span></div>
         <div class="project-links">
           <a class="live" href="https://klgz666666.github.io/codeplay/" target="_blank" rel="noopener" data-zh="▶ 在线预览" data-en="▶ Live Demo">▶ 在线预览</a>
           <a class="repo" href="https://github.com/klgz666666/codeplay" target="_blank" rel="noopener" data-zh="源码" data-en="Source">源码</a>
         </div>
       </article>
-      <!-- 真实经历：腾讯青科实训营助教 -->
+      <!-- 腾讯青科实训营助教 -->
       <article class="card project reveal">
-        <h3 data-zh="腾讯青科实训营 · AI Coding 全栈开发助教" data-en="Tencent Youth Science Camp · AI Coding Full-stack TA">腾讯青科实训营 · AI Coding 全栈开发助教</h3>
-        <p data-zh="2026 年 8 月担任全栈开发方向助教。技术上指导学生完成前端 / 后端开发、API 对接与网页部署；日常负责学员签到签退、班级纪律管理与全班安全。" data-en="TA for the full-stack track (Aug 2026). Technically mentored students on frontend / backend development, API integration, and web deployment; day-to-day owned attendance, class discipline, and overall student safety.">2026 年 8 月担任全栈开发方向助教。技术上指导学生完成前端 / 后端开发、API 对接与网页部署；日常负责学员签到签退、班级纪律管理与全班安全。</p>
-        <div class="tags"><span>腾讯</span><span>助教</span><span>全栈开发</span><span>AI Coding</span></div>
+        <h3 data-zh="腾讯青科实训营 · 全栈开发方向助教" data-en="Tencent Youth Science Camp · Full-stack Track TA">腾讯青科实训营 · 全栈开发方向助教</h3>
+        <p data-zh="2026 年 8 月于成都担任全栈开发方向助教（为期一周），带教 20 名学员覆盖前端 / 后端开发、API 对接与网页部署全流程，所带学员产出 4 个结业项目并全部通过导师评审路演；同时负责签到签退、班级纪律与全班安全，获评「优秀助教」。" data-en="TA for the full-stack track in Chengdu (Aug 2026, one week). Mentored 20 trainees across frontend / backend development, API integration, and web deployment; all 4 capstone projects passed mentor review and demo day. Also owned attendance, class discipline, and student safety, and was named an Outstanding TA.">2026 年 8 月于成都担任全栈开发方向助教（为期一周），带教 20 名学员覆盖前端 / 后端开发、API 对接与网页部署全流程，所带学员产出 4 个结业项目并全部通过导师评审路演；同时负责签到签退、班级纪律与全班安全，获评「优秀助教」。</p>
+        <div class="tags"><span>腾讯</span><span>优秀助教</span><span>教学交付</span><span>AI Coding</span></div>
       </article>
-      <!-- 科研经历：多智能体应用课题组 -->
+      <!-- 科研经历：多智能体课题组 -->
       <article class="card project reveal">
-        <h3 data-zh="多智能体应用课题组（导师：高洁老师）" data-en="Multi-Agent Applications Group (Advisor: Prof. Gao Jie)">多智能体应用课题组（导师：高洁老师）</h3>
-        <p data-zh="2026 年 8 月加入高洁老师课题组，聚焦多智能体应用方向。目前主要进行文献阅读与调研，梳理多智能体协同与控制相关方法，并借助 MATLAB 做仿真与算法验证。" data-en="Joined Prof. Gao Jie's group in Aug 2026, focusing on multi-agent applications. Currently conducting literature review on multi-agent coordination & control, and using MATLAB for simulation and algorithm validation.">2026 年 8 月加入高洁老师课题组，聚焦多智能体应用方向。目前主要进行文献阅读与调研，梳理多智能体协同与控制相关方法，并借助 MATLAB 做仿真与算法验证。</p>
-        <div class="tags"><span>多智能体</span><span>文献调研</span><span>MATLAB</span><span>科研</span></div>
+        <h3 data-zh="多智能体应用课题组（导师：高杰老师）" data-en="Multi-Agent Applications Group (Advisor: Prof. Gao Jie)">多智能体应用课题组（导师：高杰老师）</h3>
+        <p data-zh="2026 年 8 月加入高杰老师课题组，聚焦多智能体系统方向。系统阅读中英文文献 8 篇，梳理预定时间控制、事件触发控制与奇异多智能体系统的研究现状与方法脉络，整理文献笔记与复现思路。" data-en="Joined Prof. Gao Jie's group in Aug 2026, focusing on multi-agent systems. Reviewed 8 papers in Chinese and English on prescribed-time control, event-triggered control, and singular multi-agent systems, and compiled reading notes and reproduction plans.">2026 年 8 月加入高杰老师课题组，聚焦多智能体系统方向。系统阅读中英文文献 8 篇，梳理预定时间控制、事件触发控制与奇异多智能体系统的研究现状与方法脉络，整理文献笔记与复现思路。</p>
+        <div class="tags"><span>多智能体</span><span>文献调研</span><span>控制理论</span><span>科研</span></div>
       </article>
     </div>
   </section>
@@ -213,23 +223,20 @@
       <h2 data-zh="一起聊聊？" data-en="Let's Talk">一起聊聊？</h2>
     </div>
     <div class="card contact-card reveal">
-      <!-- 替换为你的真实联系方式 -->
       <p data-zh="欢迎发邮件或在社交平台找到我：" data-en="Feel free to email me or find me on social platforms:">欢迎发邮件或在社交平台找到我：</p>
       <ul class="contact-list">
         <li><span data-zh="邮箱" data-en="Email">邮箱</span><a href="mailto:3204037067@qq.com">3204037067@qq.com</a></li>
         <li><span data-zh="电话" data-en="Phone">电话</span><a href="tel:19980874564">19980874564</a></li>
-        <li><span data-zh="GitHub 主页" data-en="GitHub">GitHub 主页</span><a href="https://github.com/klgz666666">github.com/klgz666666</a></li>
-        <li><span data-zh="在线预览" data-en="Live Demo">在线预览</span><a href="https://klgz666666.github.io/codeplay/">klgz666666.github.io/codeplay</a></li>
-        <li><span data-zh="项目源码" data-en="Source">项目源码</span><a href="https://github.com/klgz666666/codeplay">github.com/klgz666666/codeplay</a></li>
-        <li><span data-zh="简历源码" data-en="Resume Source">简历源码</span><a href="https://github.com/klgz666666/klgz666666.github.io">github.com/klgz666666/klgz666666.github.io</a></li>
         <li><span data-zh="微信" data-en="WeChat">微信</span><span>klgz66666666</span></li>
+        <li><span data-zh="GitHub" data-en="GitHub">GitHub</span><a href="https://github.com/klgz666666" target="_blank" rel="noopener">github.com/klgz666666</a></li>
+        <li><span data-zh="作品集源码" data-en="Portfolio Source">作品集源码</span><a href="https://github.com/klgz666666/klgz666666.github.io" target="_blank" rel="noopener">github.com/klgz666666/klgz666666.github.io</a></li>
         <li><span data-zh="所在地" data-en="Location">所在地</span><span data-zh="中国 · 成都" data-en="Chengdu, China">中国 · 成都</span></li>
       </ul>
     </div>
   </section>
 
   <footer class="footer">
-    <p data-zh="© 2026 吴瑶珍 · 用 ❤️ 与代码搭建" data-en="© 2026 Wu Yaozhen · Built with ❤️ & code">© 2026 吴瑶珍 · 用 ❤️ 与代码搭建</p>
+    <p data-zh="© 2026 吴瑶珍 · 用 ❤️ 与代码搭建" data-en="© 2026 Wu Yaozhen · Built with ❤️ &amp; code">© 2026 吴瑶珍 · 用 ❤️ 与代码搭建</p>
   </footer>
 
   <script src="script.js"></script>
