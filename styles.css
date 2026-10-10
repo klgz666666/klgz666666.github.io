@@ -154,21 +154,6 @@ a { color: inherit; text-decoration: none; }
   max-width: 34em;
 }
 
-/* 可用性状态点：真实状态指示，不是装饰 chrome */
-.status {
-  margin-top: var(--s5);
-  display: inline-flex; align-items: baseline; gap: var(--s3);
-  font-size: .9375rem; font-weight: 600; color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-/* 静态指示点。不用脉冲动画：实习时间窗是静态事实，
-   不是随时刻变化的数据，用呼吸动效伪造实时感是不诚实的。 */
-.status__dot {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: var(--seal); flex: none;
-  transform: translateY(-2px);
-}
-
 .hero__cta {
   margin-top: var(--s7);
   display: flex; flex-wrap: wrap; gap: var(--s3);
@@ -307,7 +292,6 @@ a { color: inherit; text-decoration: none; }
   font-size: .8125rem; font-weight: 700; color: var(--seal);
   white-space: nowrap;
 }
-.skill__level--learning { color: var(--muted); }
 
 /* 分析作品的发现清单：朱砂方点，与打印版技能方点同一套视觉语言 */
 .findings { list-style: none; margin-top: var(--s4); }
@@ -428,9 +412,8 @@ a { color: inherit; text-decoration: none; }
 .hero__name     { animation-delay: .04s; }
 .hero__role     { animation-delay: .10s; }
 .hero__tagline  { animation-delay: .16s; }
-.status         { animation-delay: .22s; }
-.hero__cta      { animation-delay: .28s; }
-.hero__links    { animation-delay: .34s; }
+.hero__cta      { animation-delay: .22s; }
+.hero__links    { animation-delay: .28s; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(14px); }
@@ -482,7 +465,7 @@ a { color: inherit; text-decoration: none; }
    打印：HR 可能会直接打印这一页
    ========================================================= */
 @media print {
-  .topbar, .skip, .hero__cta, .hero__links, .foot__meta, .status__dot { display: none; }
+  .topbar, .skip, .hero__cta, .hero__links, .foot__meta { display: none; }
   body { background: #fff; font-size: 11pt; color: #000; }
   .hero { border-bottom: 1px solid #999; }
   .hero__inner { padding: 0 0 var(--s5); }
